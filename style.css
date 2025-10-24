@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+  /* CSS variables */
+  --primary-color: #ffffff;
+  --dark-blue-color: #28019C;
+  --secondary-color: #D9D9D9;
+  --section-color:#3700D9;
+  --purple-color:#AA20E2;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-weight: 400;
+    background-color: black;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+.generic-btn a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 8.5px 30px 8.5px 28px;
+    color: var(--dark-blue-color);
+    background-color: var(--primary-color);
+}
+.secondary-btn a{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 39.5px;
+    line-height: 23px;
+    border-radius: 7px;
+    display:inline-block;
+    padding: 8.5px 28.5px;
+    color: var(--primary-color);
+    background-color: var(--purple-color);
+}
+.wrapper{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.header-banner-con{
+    padding: 0 59px;
+    position: relative;
+    isolation: isolate;
+    border-radius: 0 0 53px 53px;
+    background-color: var(--section-color);
+}
+.header-banner-con::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 94%;
+    position: absolute;
+    border-radius: 0 0 53px 53px;
+    background: url(img/hearde-and-banner-after.png) no-repeat top / cover;
+}
+/* HEADER SEC END */
+.header-con{
+    width: 100%;
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    max-width: 241px;
+}
+.header-logo > a{
+    display: flex;
+    align-items: center;
+}
+.header-logo img{
+    max-width: 100%;
+    object-fit: contain;
+}
+/* HEADER SEC START */
+
+/* BANNER SEC STRAT */
+.banner-con{
+    margin: 0 auto;
+    max-width: 957px;
+    text-align: center;
+    padding: 83px 0 94.5px;
+}
+.banner-con > h1{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+}
+.banner-con > p{
+    padding: 0 70px;
+    font-size: 25px;
+    margin-top: 44px;
+    line-height: 30px;
+}
+/* BANNER SEC END */
+
+
+/* INTELLIGENT PLATFORM START */
+.intelligent-platform{
+    isolation: isolate;
+    position: relative;
+    padding: 55px 0 62px;
+}
+.intelligent-platform::before {
+    content: "";
+    top: -120px;
+    left: 0;
+    z-index: -1;
+    width: 452px;
+    height: 710px;
+    position: absolute;
+    background: url(img/plateform-left-bg.png) no-repeat left;
+}
+.intelligent-platform::after {
+    content: "";
+    top: -80px;
+    right: 0;
+    z-index: -1;
+    width: 473px;
+    height: 670px;
+    position: absolute;
+    background: url(img/platform-right-bg.png) no-repeat left;
+}
+.intelligent-platform-inner{
+    display: grid;
+    gap: 23px;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+.intelligent-platform-title h3{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.intelligent-platform-para p{
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+}
+.intelligent-platform-para p:last-child{
+    margin-bottom: 0;
+}
+/* INTELLIGENT PLATFORM END */
+
+/*  */
+.al-world{
+    isolation: isolate;
+}
+.al-driven{
+    text-align: center;
+    padding: 71px 62px 62px;
+    background: url(img/ai-bg-img.png) no-repeat center / cover;
+    border-radius:  53px 53px 0 0;
+}
+.al-driven h3{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 71px;
+    margin-bottom: 25px;
+}
+.al-driven p{
+    color: var(--secondary-color);
+}
+.al-driven .generic-btn a{
+    margin-top: 44px;
+    color: var(--primary-color);
+    background-color: var(--section-color);
+}
+/*  */
+
+/* FOOTER SEC START */
+.footer-con{
+    padding: 42px 0 53px;
+}
+.footer-con-inner{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+}
+.footer-con-left h6{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.footer-con-left span{
+    display: block;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+.footer-con-left a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--primary-color);
+}
+.footer-con-right span strong{
+    font-weight: 700;
+}
+/* FOOTER SEC END */
+
+
+/* RESPONSIVE STRAT */
+
+/* Big Desktops */
+@media (max-width: 1300px) {
+    .banner-con > h1 {
+        font-size: 66px;
+        line-height: 76px;
+    }
+}
+/* 1200 */
+
+/* Desktops  */
+@media (max-width: 1199px) {
+    .header-con{
+        padding-top: 45px;
+    }
+    .header-banner-con{
+        padding: 0 20px;
+    }
+    .banner-con{
+        padding: 70px 0;
+    }
+    .banner-con > h1 {
+        font-size: 58px;
+        line-height: 72px;
+    }
+    .banner-con > p {
+        padding: 0 66px;
+        font-size: 22px;
+        margin-top: 30px;
+        line-height: 34px;
+    }
+    .secondary-btn a{
+        margin-top: 25px;
+    }
+    .generic-btn a{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .al-driven {
+        padding: 61px 40px;
+    }
+    .al-driven h3 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .al-driven p br{
+        display: none;
+    }
+
+}
+/* 992 */
+
+/* Small laptops */
+@media (max-width: 991px) {
+    p{
+        font-size: 18px;
+    }
+    .header-con {
+        padding-top: 35px;
+    }
+    .header-logo{
+        max-width: 180px;
+    }
+    .generic-btn a {
+        font-size: 17px;
+        line-height: 19px;
+        padding: 8px 20px;
+    }
+    .banner-con > h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .banner-con > p {
+        padding: 0;
+        line-height: 32px;
+    }
+        .banner-con {
+        padding: 50px 0;
+    }
+    .intelligent-platform::after {
+        top: 10px;
+        width: 350px;
+        height: 440px;
+    }
+    .intelligent-platform::before {
+        top: 10px;
+        width: 350px;
+        height: 570px;
+    }
+    .intelligent-platform-title h3{
+        font-size: 36px;
+    }
+    .intelligent-platform-para p {
+        margin-bottom: 20px;
+    }
+    .al-driven {
+        padding: 40px 20px;
+    }
+    .al-driven h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .al-driven .generic-btn a{
+        margin-top: 20px;
+    }
+    .header-banner-con , .header-banner-con::before{
+        border-radius: 0 0 40px 40px;
+    }
+    .al-driven{
+        border-radius: 40px 40px 0 0;
+    }
+}
+/* 768 */
+
+/* Tablets */
+@media (max-width: 767px) {
+    .wrapper , .header-banner-con{
+        padding: 0 16px;
+    }
+    .header-logo {
+        max-width: 150px;
+    }
+    .generic-btn a {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 8px 18px;
+    }
+    .banner-con > h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-con > p {
+        margin-top: 20px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .intelligent-platform::before{
+        left: -100px;
+    }
+    .intelligent-platform::after{
+        top: 0;
+        height: 570px;
+    }
+    .secondary-btn a {
+        margin-top: 20px;
+    }
+    .intelligent-platform-inner{
+        text-align: center;
+        grid-template-columns: 100%;
+    }
+    .intelligent-platform{
+        padding: 50px 0;
+    }
+        .al-driven {
+        padding: 40px 16px;
+    }
+    .al-driven h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .footer-con-inner{
+        gap: 20px;
+    }
+
+}
+/* 576 */
+
+/* Mobile */
+@media (max-width: 575px) {
+    .header-con {
+        padding-top: 30px;
+    }
+    .generic-btn a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 8px 12px;
+    }
+    .banner-con > h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .banner-con > p {
+        margin-top: 15px;
+        line-height: 24px;
+        font-size: 18px;
+    }
+    .secondary-btn a {
+        font-size: 17px;
+        line-height: 19px;
+        padding: 8px 20px;
+    }
+    .intelligent-platform-title h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .intelligent-platform-para p {
+        margin-bottom: 15px;
+    }
+    .footer-con-inner{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header-banner-con, .header-banner-con::before{
+        border-radius: 0 0 30px 30px;
+    }
+    .al-driven{
+        border-radius: 30px 30px 0 0;
+        padding: 30px 16px;
+    }
+    .footer-con {
+        padding: 30px 0;
+    }
+    .intelligent-platform {
+        padding: 40px 0;
+    }
+}
+/* 401 */
+
+/* Small Mobile */
+@media (max-width: 400px) {
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .wrapper, .header-banner-con{
+        padding: 0 14px;
+    }
+    .header-logo {
+        max-width: 100px;
+    }
+    .generic-btn a {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 7px 10px;
+    }
+    .banner-con {
+        padding: 40px 0;
+    }
+    .banner-con > h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .banner-con > p {
+        line-height: 23px;
+        font-size: 16px;
+    }
+    .secondary-btn a {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 7px 18px;
+    }
+    .intelligent-platform-title h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .al-driven h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+    .header-banner-con, .header-banner-con::before {
+        border-radius: 0 0 20px 20px;
+    }
+    .header-banner-con::before {
+        height: 96%;
+    }
+    .al-driven {
+        border-radius: 20px 20px 0 0;
+    }
+
+}
